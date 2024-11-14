@@ -3,6 +3,7 @@ import {ReactNode} from "react";
 import {Providers} from "@/app/providers";
 import "../../public/styles/normalize.css";
 import "@/styles/global.scss";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
         <Providers>
-            <body>
+            <body className="grey-bg">
+            <Navbar/>
               {children}
             </body>
         </Providers>

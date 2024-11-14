@@ -5,6 +5,7 @@ import {QueryClient} from "@tanstack/query-core";
 import {QueryClientProvider} from "@tanstack/react-query";
 import {Provider} from "react-redux";
 import store from "@/lib/store";
+import Navbar from "@/components/Navbar";
 
 
 export const Providers = ({children}: PropsWithChildren)=> {
